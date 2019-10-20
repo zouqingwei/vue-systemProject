@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box"></div>
+<div id="msg"></div>
+</body>
+</html>
+<script>
+  localStorage.name='jack';
+  document.getElementById('box').innerHTML=localStorage.name;
+  sessionStorage.name='lal';
+  document.getElementById('msg').innerHTML=sessionStorage.name;
+   let key='name',value='zs';
+   let key1='age',value1='ls';
+   localStorage.setItem(key,value);//设置本地存储
+   localStorage.setItem(key1,value1);
+   console.log(localStorage.getItem(key));  //把key值取出来
+  console.log(localStorage.getItem(key1));
+   console.log(localStorage.key(0));
+   console.log(localStorage.key(1));
+   localStorage.removeItem(key);  //删除存储
+   console.log(localStorage.getItem(key));
+   localStorage.clear();   //清除本地存储
+   console.log(localStorage.getItem(key));
+  console.log(localStorage.getItem(key1));
+</script>
